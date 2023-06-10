@@ -3,3 +3,4 @@ raw_data_*.json
 transformed_data.csv
 map.html
 load.ipynb
+logfile.log
