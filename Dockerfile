@@ -14,7 +14,7 @@ RUN chmod 0644 /etc/cron.d/cronfile
 RUN /usr/bin/crontab /etc/cron.d/cronfile
 RUN echo $PYTHONPATH
 # run crond as main process of container
-CMD ["cron", "-f","-L 15"]
+CMD ["cron","-l 15", "-f"]
 
 
 # CMD python etl.py
