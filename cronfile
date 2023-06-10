@@ -1,1 +1,1 @@
-*/10 * * * * python etl.py >> /var/log/cron.log 2>&1
+*/1 * * * * cd /fos-data-engineer/ && /usr/local/bin/python extract.py >> cron_log.log 2>&1
